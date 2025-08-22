@@ -8,76 +8,205 @@
 / {
     combos {
         compatible = "zmk,combos";
+        timeout-ms = <100>;
+        require-prior-idle-ms = <150>;
+
+        combo_lang2 {
+            key-positions = <7 8 9>;
+            bindings = <&kp LANG2>;
+        };
+
+        combo_lang1 {
+            key-positions = <10 11 12>;
+            bindings = <&kp LANG1>;
+        };
+        
+        combo_comma {
+            key-positions = <10 16>;
+            bindings = <&kp COMMA>;
+        };
+
+        combo_period {
+            key-positions = <11 16>;
+            bindings = <&kp PERIOD>;
+        };
 
         q {
             bindings = <&kp Q>;
-            key-positions = <1 0>;
+            key-positions = <0 2>;
+            layers = <0>;
         };
 
-        f {
-            bindings = <&kp F>;
+        x {
+            bindings = <&kp X>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
-        y {
-            bindings = <&kp Y>;
-            key-positions = <3 4>;
+        l {
+            bindings = <&kp L>;
+            key-positions = <3 5>;
+            layers = <0>;
         };
 
         p {
             bindings = <&kp P>;
-            key-positions = <4 5>;
+            key-positions = <3 4>;
+            layers = <0>;
         };
 
-        g {
-            bindings = <&kp G>;
-            key-positions = <8 9>;
+        m {
+            bindings = <&kp M>;
+            key-positions = <4 5>;
+            layers = <0>;
         };
 
         j {
             bindings = <&kp J>;
-            key-positions = <10 11>;
+            key-positions = <5 13>;
+            layers = <0>;
         };
 
-        lang1 {
-            bindings = <&mt LEFT_GUI LANGUAGE_1>;
+        c {
+            bindings = <&kp C>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
-        lang2 {
-            bindings = <&mt RIGHT_GUI LANGUAGE_2>;
+        v {
+            bindings = <&kp V>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        w {
+            bindings = <&kp W>;
+            key-positions = <10 12>;
+            layers = <0>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        g {
+            bindings = <&kp G>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
-        lsft {
-            bindings = <&kp LSHFT>;
-            key-positions = <6 7>;
+        d {
+            bindings = <&kp D>;
+            key-positions = <12 13>;
+            layers = <0>;
         };
 
-        lgui {
-            bindings = <&kp LCTRL>;
-            key-positions = <14 15>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <12  16>;
+            layers = <0>;
         };
 
-        lalt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <16 17>;
+        lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <2 15>;
+            layers = <0>;
         };
 
-        layer3 {
-            bindings = <&lt 3 EQUAL>;
-            key-positions = <14 17>;
+        rbkt {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <3 16>;
+            layers = <0>;
         };
 
-        layer4 {
-            bindings = <&mo 4>;
-            key-positions = <15 16>;
+    
+        n3 {
+            bindings = <&kp N3>;
+            key-positions = <10 11>;
+            layers = <1>;
         };
 
-        y2 {
-            bindings = <&kp Y>;
-            key-positions = <9 10>;
+        n5 {
+            bindings = <&kp N5>;
+            key-positions = <10 12>;
+            layers = <1>;
         };
+
+        n6 {
+            bindings = <&kp N6>;
+            key-positions = <11 12>;
+            layers = <1>;
+        };
+
+        n7 {
+            bindings = <&kp N7>;
+            key-positions = <10 11 12>;
+            layers = <1>;
+        };
+
+        n9 {
+            bindings = <&kp N9>;
+            key-positions = <10 13>;
+            layers = <1>;
+        };
+
+        n0 {
+            bindings = <&kp N0>;
+            key-positions = <11 13>;
+            layers = <1>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <10 11>;
+            layers = <2>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <10 12>;
+            layers = <2>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <11 12>;
+            layers = <2>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <10 11 12>;
+            layers = <2>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <10 13>;
+            layers = <2>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <11 13>;
+            layers = <2>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <10 11 13>;
+            layers = <2>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <12 13>;
+            layers = <2>;
+        };
+
+
     };
 
     keymap {
@@ -85,31 +214,41 @@
 
         default_layer {
             bindings = <
-&lt 2 W  &kp E  &kp R  &kp U  &kp I  &kp O  &kp A  &kp S  &kp D  &kp T  &kp H  &kp K  &lt 1 L  &mt RIGHT_SHIFT ENTER  &kp Z  &kp B  &kp N  &kp M
+                &mt LGUI Q  &kp U           &kp Y         &kp B         &kp N       &mt RGUI R
+&mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT       &mt RSHIFT T
+                            &kp BACKSPACE   &kp SPACE     &lt 1 ENTER  &mt RCTRL TAB
             >;
         };
 
         layer_1 {
             bindings = <
-&kp X  &kp C  &kp V  &kp SLASH  &kp GRAVE  &kp DELETE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COMMA  &kp PERIOD  &kp SPACE  &kp ENTER  &trans  &kp RIGHT_SHIFT  &kp MINUS  &mt LEFT_GUI SEMICOLON  &mt RIGHT_GUI SQT  &kp BACKSPACE
+            &kp LGUI    &kp SLASH   &kp BASKSLASH   &kp PLUS        &kp ASTERISK   &kp MINUS
+&kp LSHIFT  &kp LALT    &kp LCTRL   &none           &kp N1          &kp N2         &kp N4      &kp N8
+                        &trans  &lt 2 SPACE         &ltrans         &trans    
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp LEFT_SHIFT  &kp LG(R)  &kp EQUAL  &kp BACKSLASH  &kp UP_ARROW  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(T)  &kp BACKSPACE  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(Z)  &kp ESCAPE  &kp LG(N)  &kp TAB
+        &trans  &none   &none       &none   &none   &none
+&trans  &trans  &trans  &trans      &kp F1  &kp F2  &kp F4  &kp F8
+                &trans  &trans      &trans  &trans
             >;
-        };
+        };rr
 
         layer_3 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7  &kp N8  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp ASTERISK  &kp N9  &kp N0  &trans  &kp PLUS  &kp MINUS  &trans
+        &none   &none   &none       &none   &none   &none
+&none   &none   &none   &none       &none   &none   &none   &none
+                &none   &none       &none   &none
             >;
         };
 
         layer_4 {
-            bindings = <
-&kp F11  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp F12  &trans  &trans  &bt BT_SEL 4
+            bbindings = <
+        &none   &none   &none       &none   &none   &none
+&none   &none   &none   &none       &none   &none   &none   &none
+                &none   &none       &none   &none
             >;
         };
     };

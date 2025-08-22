@@ -30,6 +30,10 @@
             key-positions = <11 16>;
             bindings = <&kp PERIOD>;
         };
+   　   esc {
+            key-positions = <0 6>;
+            bindings = <&kp ESC>;
+        };
 
         q {
             bindings = <&kp Q>;

@@ -66,6 +66,8 @@ combos:
   k: ','
 - p: [11, 16]
   k: .
+- p: [0, 6]
+  k: ESC
 - p: [0, 2]
   k: Q
   l: [default]

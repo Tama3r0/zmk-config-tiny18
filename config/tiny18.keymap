@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -20,7 +19,7 @@
             key-positions = <10 11 12>;
             bindings = <&kp LANG1>;
         };
-        
+
         combo_comma {
             key-positions = <10 16>;
             bindings = <&kp COMMA>;
@@ -121,7 +120,6 @@
             layers = <0>;
         };
 
-    
         n3 {
             bindings = <&kp N3>;
             key-positions = <10 11>;
@@ -205,8 +203,6 @@
             key-positions = <12 13>;
             layers = <2>;
         };
-
-
     };
 
     keymap {
@@ -214,25 +210,19 @@
 
         default_layer {
             bindings = <
-                &mt LGUI Q  &kp U           &kp Y         &kp B         &kp N       &mt RGUI R
-&mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT       &mt RSHIFT T
-                            &kp BACKSPACE   &lt 2 SPACE     &lt 1 ENTER  &mt RCTRL TAB
+&mt LGUI Q  &kp U  &kp Y  &kp B  &kp N  &mt RGUI R  &mt LSHIFT O  &mt LALT I  &kp A  &kp E  &kp S  &kp K  &mt RALT H  &mt RSHIFT T  &kp BACKSPACE  &lt 2 SPACE  &lt 1 ENTER  &mt RCTRL TAB
             >;
         };
 
         layer_1 {
             bindings = <
-            &kp LGUI    &kp FSLH    &kp BSLH        &kp PLUS        &kp ASTERISK   &kp MINUS
-&kp LSHIFT  &kp LALT    &kp LCTRL   &none           &kp N1          &kp N2         &kp N4      &kp N8
-                        &kp DEL      &trans     &trans         &trans    
+&kp LGUI  &kp FSLH  &kp BSLH  &kp PLUS  &kp ASTERISK  &kp MINUS  &kp LSHIFT  &kp LALT  &kp LCTRL  &none  &kp N1  &kp N2  &kp N4  &kp N8  &kp DEL  &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-        &trans  &kp UP   &none       &none   &none   &none
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT      &kp F1  &kp F2  &kp F4  &kp F8
-                &trans  &trans      &trans  &trans
+&trans  &kp UP  &none  &none  &none  &none  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F1  &kp F2  &kp F4  &kp F8  &trans  &trans  &trans  &trans
             >;
         };
     };

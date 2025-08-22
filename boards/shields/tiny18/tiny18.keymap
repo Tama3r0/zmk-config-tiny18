@@ -222,9 +222,9 @@
 
         layer_1 {
             bindings = <
-            &kp LGUI    &kp SLASH   &kp BASKSLASH   &kp PLUS        &kp ASTERISK   &kp MINUS
+            &kp LGUI    &kp FSLH    &kp BSLH        &kp PLUS        &kp ASTERISK   &kp MINUS
 &kp LSHIFT  &kp LALT    &kp LCTRL   &none           &kp N1          &kp N2         &kp N4      &kp N8
-                        &trans  &lt 2 SPACE         &ltrans         &trans    
+                        &trans      &lt 2 SPACE     &ltrans         &trans    
             >;
         };
 

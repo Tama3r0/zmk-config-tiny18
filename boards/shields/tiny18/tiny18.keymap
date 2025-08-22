@@ -234,22 +234,6 @@
 &trans  &kp LEFT  &kp DOWN  &kp RIGHT      &kp F1  &kp F2  &kp F4  &kp F8
                 &trans  &trans      &trans  &trans
             >;
-        };rr
-
-        layer_3 {
-            bindings = <
-        &none   &none   &none       &none   &none   &none
-&none   &none   &none   &none       &none   &none   &none   &none
-                &none   &none       &none   &none
-            >;
-        };
-
-        layer_4 {
-            bbindings = <
-        &none   &none   &none       &none   &none   &none
-&none   &none   &none   &none       &none   &none   &none   &none
-                &none   &none       &none   &none
-            >;
         };
     };
 };

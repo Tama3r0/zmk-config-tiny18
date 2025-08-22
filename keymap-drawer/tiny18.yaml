@@ -13,7 +13,7 @@ layers:
   - E
   - S
   - K
-  - '&mt RALT'
+  - {t: H, h: RALT}
   - {t: T, h: RSHIFT}
   - BACKSPACE
   - {t: SPACE, h: '2'}

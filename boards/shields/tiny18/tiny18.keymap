@@ -216,7 +216,7 @@
             bindings = <
                 &mt LGUI Q  &kp U           &kp Y         &kp B         &kp N       &mt RGUI R
 &mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT       &mt RSHIFT T
-                            &kp BACKSPACE   &kp SPACE     &lt 1 ENTER  &mt RCTRL TAB
+                            &kp BACKSPACE   &lt 2 SPACE     &lt 1 ENTER  &mt RCTRL TAB
             >;
         };
 
@@ -224,14 +224,14 @@
             bindings = <
             &kp LGUI    &kp FSLH    &kp BSLH        &kp PLUS        &kp ASTERISK   &kp MINUS
 &kp LSHIFT  &kp LALT    &kp LCTRL   &none           &kp N1          &kp N2         &kp N4      &kp N8
-                        &trans      &lt 2 SPACE     &ltrans         &trans    
+                        &kp DEL      &trans     &trans         &trans    
             >;
         };
 
         layer_2 {
             bindings = <
-        &trans  &none   &none       &none   &none   &none
-&trans  &trans  &trans  &trans      &kp F1  &kp F2  &kp F4  &kp F8
+        &trans  &kp UP   &none       &none   &none   &none
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT      &kp F1  &kp F2  &kp F4  &kp F8
                 &trans  &trans      &trans  &trans
             >;
         };rr

@@ -215,7 +215,7 @@
         default_layer {
             bindings = <
                 &mt LGUI Q  &kp U           &kp Y         &kp B         &kp N       &mt RGUI R
-&mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT       &mt RSHIFT T
+&mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT H      &mt RSHIFT T
                             &kp BACKSPACE   &lt 2 SPACE     &lt 1 ENTER  &mt RCTRL TAB
             >;
         };

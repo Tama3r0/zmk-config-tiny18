@@ -14,11 +14,13 @@
         combo_lang2 {
             key-positions = <7 8 9>;
             bindings = <&kp LANG2>;
+            layers = <0>;
         };
 
         combo_lang1 {
             key-positions = <10 11 12>;
             bindings = <&kp LANG1>;
+            layers = <0>;
         };
         
         combo_comma {
@@ -114,13 +116,13 @@
         };
 
         lbkt {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LBKT>;
             key-positions = <2 15>;
             layers = <0>;
         };
 
         rbkt {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RBKT>;
             key-positions = <3 16>;
             layers = <0>;
         };
@@ -218,7 +220,7 @@
 
         default_layer {
             bindings = <
-                &mt LGUI Q  &kp U           &kp Y         &kp B         &kp N       &mt RGUI R
+                &kp Q       &kp U           &kp Y         &kp B        &kp N       &mt RGUI R
 &mt LSHIFT O    &mt LALT I  &kp A           &kp E         &kp S        &kp K       &mt RALT H      &mt RSHIFT T
                             &kp BACKSPACE   &lt 2 SPACE     &lt 1 ENTER  &mt RCTRL TAB
             >;
@@ -226,7 +228,7 @@
 
         layer_1 {
             bindings = <
-            &kp LGUI    &kp FSLH    &kp BSLH        &kp PLUS        &kp ASTERISK   &kp MINUS
+            &kp LGUI    &kp FSLH    &kp BSLH        &kp PLUS        &kp STAR　　   &kp MINUS
 &kp LSHIFT  &kp LALT    &kp LCTRL   &none           &kp N1          &kp N2         &kp N4      &kp N8
                         &kp DEL      &trans     &trans         &trans    
             >;
